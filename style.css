@@ -1,0 +1,106 @@
+* {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+body {
+    background-image: url(https://img.freepik.com/premium-photo/vintage-blue-aquarelle-painted-wall-background-paint-decoration-backdrop-color-pop-design_1962-1379.jpg?w=740);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.game-container {
+    width: 1000px;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    background:rgb(99, 181, 214);
+    position: relative;
+    margin-top: 5%;
+    left: 50%;
+    transform: translate(-50% ,0);
+}
+
+.game-header {
+    width: 100%;
+    height: 60px;
+    padding: 0px 10px;
+    background: rgb(99, 181, 214);
+    border-bottom: 1px solid gray;
+    margin-bottom: 5px;
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-header span{
+    display: flex;
+    align-items: center;
+}
+
+.game-header span > span{
+    width: 100px;
+    height: 15px;
+    padding: 5px 10px;
+    border: 1px dotted gray;
+    display: inline-block;
+    text-align: center;
+    margin-left: 5px;
+}
+
+
+
+.game-footer {
+    width: 100%;
+    height: 20px;
+}
+
+.play-container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+.num-btn {
+    font-size: 18px;
+    height: 40px;
+    width: 30px;
+    border: 1px solid rgb(99, 214, 151, 50%) ;
+    outline: none;
+}
+
+.num-btn:hover{
+    border: 1px dotted #a73db1 ;
+}
+
+.num-btn:active{
+    background: #a73db1;
+    color: white;
+}
+
+@media (max-width:768px ){
+    body{        
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .game-container{
+        width: 100%;
+        height: 100%;
+        margin-left: -100%;
+        transform: translate(50%,0);
+    }
+    .game-header{
+        gap: 20px;
+    }
+
+    .game-header span span{
+        width: 100%;
+    }
+    .num-btn{
+        font-size: 15px;
+        padding: 5px;
+        height: 30px;
+        width: 25px;
+    }
+}
